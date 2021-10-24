@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Online MarketPlace</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{../css/main.css}">
+
+</head>
+<body>
+<div class="container-fluid text-center">
+    <h1>Welcome to my Application!!! </h1>
+</div>
+
+<section class="main">
+    <img width="100%" src="https://github.com/Infology-Soluation/frontend/blob/main/woman-shopping-vegetables-grocery-store.jpg?raw=true" alt="home" />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="text-center">
+<!--                    <h1>Welcome</h1>-->
+                    <div class="row">
+                        <a class="btn btn-success m-2" th:href="@{/users}">Manage Users</a></br>
+                        <a class="btn btn-success m-2" th:href="@{/items}">Item List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

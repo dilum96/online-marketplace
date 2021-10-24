@@ -1,0 +1,8 @@
+.main {
+    background: url(https://github.com/Infology-Soluation/frontend/blob/main/woman-shopping-vegetables-grocery-store.jpg?raw=true) no-repeat;
+    background-size: cover;
+    height: 100%;
+    /*background-position: 50% 50%;*/
+    width: 100%;
+}
+

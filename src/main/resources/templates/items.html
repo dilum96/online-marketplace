@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+</head>
+<body>
+<div class="container-fluid text-center">
+    <div class="m-2"><h1>Welcome to Item List</h1></div>
+    <div class="m-2">
+        <a class="h3" th:href="@{items/new}">Add New Item</a>
+    </div>
+
+    <div th:if="${message}" class="alert alert-success text-center">
+            [[${message}]]
+    </div>
+
+<div class="row m-2">
+<div class="card col-md-4" style="width: 18rem;" th:each="item:${listItems}">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title" >[[${item.itemName}]]</h5>
+        <p class="card-text">Some quick example text to build on the card title
+            and make up the bulk of the card's content.</p>
+        <p class="card-text font-weight-bold">Rs [[${item.price}]]0</p>
+        <a href="#" class="btn btn-outline-dark text-center">Add to Cart</a>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
